@@ -1,0 +1,89 @@
+@keyframes alert {
+  0%   {transform: rotateZ(0deg);}
+  25%  {transform: rotateZ(30deg);}
+  50%  {transform: rotateZ(0deg);}
+  75%  {transform: rotateZ(-30deg);}
+}
+
+html, 
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: #efefef;
+  color: #466092;
+  font-size: 18px;
+}
+
+.show {
+  display: block!important;
+}
+
+.hide {
+  display: none!important;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  font-size: 34px;
+  letter-spacing: 1px;
+  padding: 20px;
+  text-shadow: 2px 1px 1px #867373;
+}
+
+.container {
+  padding: 20px;
+}
+
+.subscribe,
+.bell-container {
+  bottom: 20px;
+  cursor: pointer;
+  right: 20px;
+  position: fixed;
+}
+
+.subscribe {
+  background: #1b6969;
+  color: #fff;
+  font-size: 1em;
+  padding: 10px;
+}
+
+.bell {
+  display: none;
+}
+
+.bell-container.show .bell {
+  display: block;
+  animation-name: alert;
+  animation-duration: 4s;
+  animation-iteration-count: 3;
+}
+
+.bell-container.show {
+  display: block;
+}
+
+.steps {
+  font-size: 18px;
+}
+
+.popup-container {
+  position: relative;
+  display: none;
+}
+
+.popup-content {
+  position:absolute;
+  bottom: -100%;
+  right: 0;
+  max-width: 400px;
+  background: #a9a5a5;
+  padding: 10px;
+  max-height: 330px;
+  overflow: auto;
+}

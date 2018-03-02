@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Push Notification</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <meta name="description" content="Push Notification Spike" />
+  <meta name="mobile-web-app-capable" content="yes" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    Push Notification
+  </header>
+
+  <article class="container">
+    <p>To see in action. Follow the steps : </p>
+    <ul>
+      <li>Click on subscribe button. On the bottom right of the page.</li>
+      <li>You will be asked to allow / block notification. Click on "allow".</li>
+      <li>You would now see a bell icon replacing the "subscribe" button</li>
+      <li>Now click the bell icon.</li>
+      <li>A popover would appear with the subscription object. Copy it all.</li>
+      <li>Open this <a href="https://web-push-codelab.glitch.me/">link</a></li>
+      <li>Paste in the "Subscription to Send To" section</li>
+      <li>Type in your message you want</li>
+      <li>Now click "Send message" and see a popup should come.</li>
+    </ul>
+  </article>
+
+  <div class="bell-container">
+    <div class="popup-container">
+      <div class="popup-content" id="popup-content"></div>
+    </div>
+    <img src="img/bell.png" alt="Push notification" class="bell" id="bell" width="40" height="40" />
+  </div>
+  <span class="subscribe" id="subscribe">Subscribe</span>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
